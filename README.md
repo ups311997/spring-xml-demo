@@ -14,6 +14,8 @@ The Main class looks up Movie bean via three ways to print out actor information
 2. Using Spring 3.2 BeanDefinitionRegistry and BeanDefinitionReader
 3. Using ApplicationContext
 Create a spring-xml-demo repo and push the code to master branch.
+
+
 Task 2:
 From the master branch of spring-xml-demo repo create a constructor-injection
 branch.
@@ -34,6 +36,8 @@ Replace id of the Movie bean with name having two values, like this:
 <bean name=”MovieA, MovieB” ……..>
 Update the code in Main to get the Movie bean by its two different name.
 Push the code to constructor-injection branch.
+  
+  
 Task 3:
 From the constructor-injection branch of spring-xml-demo repo create a
 autowire-xml branch.
@@ -45,12 +49,16 @@ Create another Movie bean and try autowire byType.
 Run the application and note the exception thrown.
 Fix the Movie bean by removing autowire byType and using constructor injection instead.
 Push the code to autowire-xml branch.
+
+
 Task 4:
 From the autowire-xml branch of spring-xml-demo repo create an aware-interface
 branch.
 Implement ApplicationContextAware, BeanFactoryAware, BeanNameAware in the
 Movie class and print out their results.
 Push the code to aware-interface branch.
+
+
 Task 5:
 From the aware-interface branch of spring-xml-demo repo create a bean-lifecycle
 branch.
@@ -65,6 +73,8 @@ In the BeanLifecycleDemoBean bean definition, in beans.xml, set the customInit()
 and customDestroy() methods to be called.
 Run the application.
 Push the code to bean-lifecycle branch.
+
+
 Task 6:
 From the bean-lifecycle branch of spring-xml-demo repo create a bean-postprocessor branch.
 Add a BeanPostProcessorDemoBean class in com.stackroute.demo that implements
