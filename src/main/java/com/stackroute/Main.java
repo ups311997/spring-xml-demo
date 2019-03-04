@@ -11,10 +11,10 @@ import org.springframework.core.io.ClassPathResource;
 
 public class Main {
     public static void main(String[] args) {
-//        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("JavaBean.xml");
-//        Movie movie=(Movie)applicationContext.getBean("movie1");
-//
-//        System.out.println(movie.getActor());
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("JavaBean.xml");
+        Movie movie=(Movie)applicationContext.getBean("movie1");
+
+        System.out.println(movie.getActor());
 
 
 
@@ -27,9 +27,9 @@ public class Main {
 //        movie.setApplicationContext(applicationContext);
 //        movieFirst.setBeanFactory(xmlBeanFactory);
 //
-        AbstractApplicationContext applicationContext1 = new ClassPathXmlApplicationContext("JavaBean.xml");
-        applicationContext1.registerShutdownHook();
-        BeanLifecycleDemoBean bean = (BeanLifecycleDemoBean)applicationContext1.getBean("beanlifecycledemo");
-        System.out.println(bean.getMessage());
+//        AbstractApplicationContext applicationContext1 = new ClassPathXmlApplicationContext("JavaBean.xml");
+//        applicationContext1.registerShutdownHook();
+//        BeanLifecycleDemoBean bean = (BeanLifecycleDemoBean)applicationContext1.getBean("beanlifecycledemo");
+//        System.out.println(bean.getMessage());
     }
 }
